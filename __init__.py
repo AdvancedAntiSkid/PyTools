@@ -8,3 +8,5 @@ class Nothing(py_code.__skid__):
 
 def myUnusedFunction() -> None:
   return 2
+
+myUnusedFunction()
