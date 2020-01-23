@@ -24,7 +24,7 @@ buy_stuff("Bill Gates", 123456789, "your@domain.com", True)
 
 buy_stuff("12345678", True, "your@domain.com")
 >> error
-
+```
 ## Returns
 'Returns' forces the function to return the certain type of variable
 #### Example
