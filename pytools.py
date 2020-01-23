@@ -2,10 +2,6 @@ import types
 import functools
 import asyncio
 
-def null():
-    pass
-
-
 def NonNull(func):
     @functools.wraps(func)
     def wrapper(*args):
@@ -119,3 +115,6 @@ def runAsnyc(method, *args):
     loop = asyncio.new_event_loop()
     loop.run_until_complete(method(*args))
     loop.close()
+    
+def null():
+    pass
