@@ -33,6 +33,18 @@ buy_stuff("12345678", True, "your@domain.com")
 @Returns(int)
 def calculate_square(x, y):
   return x * y
+  
+@CallTracker
+@Returns(int)
+def has_knowledge_in(topic):
+  return True
 ˙˙`
 ## Results
+```py
+calculate_square(2, 3):
+>> prints '6'
+
+has_knowledge_in("Javascript")
+>> error
+```
 ```
