@@ -10,7 +10,17 @@ Basically it doesn't do anything by itself, but it is required to other function
 
 ## RequireArgs
 RequireArgs is checking when the function gets called and passes the certain argument types
-For example:
+#### Example
 ```py
-def init(self
+@CallTracker
+@RequireArgs([str, int, str, bool])
+def buy_stuff(name, phone, email, has_creditcard):
+  print("success")
 ```
+#### Result
+```
+buy_stuff("Bill Gates", 123456789, "your@domain.com", True)
+>> prints 'success'
+
+buy_stuff("12345678", True, "your@domain.com")
+>> error
