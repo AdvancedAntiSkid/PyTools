@@ -38,13 +38,12 @@ def calculate_square(x, y):
 @Returns(int)
 def has_knowledge_in(topic):
   return True
-˙˙`
-## Results
+```
+#### Results
 ```py
 calculate_square(2, 3):
 >> prints '6'
 
 has_knowledge_in("Javascript")
 >> error
-```
 ```
