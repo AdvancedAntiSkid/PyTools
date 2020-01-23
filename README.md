@@ -47,3 +47,26 @@ calculate_square(2, 3):
 has_knowledge_in("Javascript")
 >> error
 ```
+
+## NonNull
+'NonNull' is like Returns(everithing except None), so it raises an error when the function returns None
+#### Example
+```py
+@CallTracker
+@NonNull
+def order_pizza(type, amount):
+  return "ordered"
+
+@CallTracker
+@NonNull
+def get_user(username, userid):
+  return None
+ ```
+ #### Results
+ ```py
+ order_pizza("Margareta", 1)
+ >> returns 'ordered'
+ 
+ get_user("Username123", 987654321):
+ >> error
+ ```
