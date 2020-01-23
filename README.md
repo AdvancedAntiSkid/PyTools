@@ -9,7 +9,7 @@ PyTools is a very simple but very useful tool for python developers
 Basically it doesn't do anything by itself, but it is required to other functions
 
 ## RequireArgs
-RequireArgs is checking when the function gets called and passes the certain argument types
+'RequireArgs' is checking when the function gets called and passes the certain argument types
 #### Example
 ```py
 @CallTracker
@@ -17,10 +17,22 @@ RequireArgs is checking when the function gets called and passes the certain arg
 def buy_stuff(name, phone, email, has_creditcard):
   print("success")
 ```
-#### Result
-```
+#### Results
+```py
 buy_stuff("Bill Gates", 123456789, "your@domain.com", True)
 >> prints 'success'
 
 buy_stuff("12345678", True, "your@domain.com")
 >> error
+
+## Returns
+'Returns' forces the function to return the certain type of variable
+#### Example
+```py
+@CallTracker
+@Returns(int)
+def calculate_square(x, y):
+  return x * y
+˙˙`
+## Results
+```
