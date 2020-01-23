@@ -70,3 +70,6 @@ def get_user(username, userid):
  get_user("Username123", 987654321):
  >> error
  ```
+
+#### Warning
+You can not use 'Returns' and 'NonNull' in the same function
