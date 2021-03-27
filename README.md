@@ -1,8 +1,12 @@
 # What is PyTools?
-PyTools is a very simple but very useful tool for python developers
+PyTools is a very simple but very useful tool for python developers.
+It forces methods to have strict types as it is in eg. java.
+
+# Warning
+This project is almost 2 years old and in no longer under development.
 
 # Installation
-`git clone https://github.com/TheInfiniteCode001/PyTools/blob/master/pytools.py wherever-you-want`
+`git clone https://github.com/AdvancedAntiSkid/PyTools/blob/master/pytools.py wherever-you-want`
 
 # Usage
 ## CallTracker
@@ -19,7 +23,7 @@ def buy_stuff(name, phone, email, has_creditcard):
 ```
 #### Results
 ```py
-buy_stuff("Bill Gates", 123456789, "your@domain.com", True)
+buy_stuff("John Doe", 123456789, "your@domain.com", True)
 >> prints 'success'
 
 buy_stuff("12345678", True, "your@domain.com")
